@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CancerBlog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+<%= link_to image_tag("pic2.png" , :alt =>"Ribbon", :class=>"round"), root_path %>
+<nav class="round">
+<header>
+
+
+
+	<ul>
+	<li>
+		<%=link_to 'home',root_path %>
+	</li>
+	<li>
+		<%=link_to 'videos',"#{}" %>
+	</li>
+	<li>
+		<%=link_to 'about',static_pages_about_path %>
+	</li>
+	<li>
+		<%=link_to 'contact', static_pages_contact_path%>
+	</li>
+	 
+</ul>
+</nav>
+</header>
+</div>
+<%= yield %>
+
+</body>
+</html>
