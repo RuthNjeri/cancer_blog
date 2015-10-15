@@ -7,19 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="container2"><%= link_to image_tag("pic2.png" , :alt =>"Ribbon", :class=>"img-rounded"), root_path %></div>
 <div class="container">
-<%= link_to image_tag("pic2.png" , :alt =>"Ribbon", :class=>"round"), root_path %>
+
 <nav class="round">
 <header>
 
 
 
-	<ul>
+	<ul class="nav nav-pills">
 	<li>
 		<%=link_to 'home',root_path %>
-	</li>
-	<li>
-		<%=link_to 'videos',"#{}" %>
 	</li>
 	<li>
 		<%=link_to 'about',static_pages_about_path %>
@@ -32,6 +30,7 @@
 </nav>
 </header>
 </div>
+
 <%= yield %>
 
 </body>

@@ -1,0 +1,17 @@
+<div class="micropostPartial">
+<h2>MICROPOSTS</h2>
+<%@microposts.each do |micropost| %>
+<div class="micropostContent">
+<%=  image_tag("ribbon.png" , :alt =>"Ribbon", :class=>"round")%>
+<br/>
+<span><%=micropost.content%></span>
+<span class="timestamp" style="color:green">
+posted.<%=time_ago_in_words(micropost.created_at)%> ago.
+</span>
+<br/>
+<br/>
+<%end%>
+
+
+</div>
+</div>

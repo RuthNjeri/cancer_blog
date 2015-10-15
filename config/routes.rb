@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'micropost/new'
+
+  get 'micropost/create'
+
   root 'static_pages#home'
   
   get 'static_pages/home'
@@ -9,10 +13,13 @@ Rails.application.routes.draw do
   get 'static_pages/contact'
 
   get 'micropost/new'
+ 
 
   get 'micropost/edit'
 
   get 'micropost/destroy'
+
+resources :microposts,:path=>'microposts'
  
 
   # The priority is based upon order of creation: first created -> highest priority.

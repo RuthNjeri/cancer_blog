@@ -53,4 +53,25 @@ nav ul li a:hover
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius: 10px;
+	
 }
+
+.microposts {
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+ 
+  .content {
+    display: block;
+    margin-left: 60px;
+   
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
